@@ -5,10 +5,7 @@ const WorksItem = ({ item }) => {
     <div className="work_card" key={item.id}>
       <img src={item.image} alt="img" className="work_img" />
       <h3 className="work_title">{item.title}</h3>
-      <a
-        href="https://github.com/ranjeetjangid08?tab=repositories"
-        className="work_button"
-      >
+      <a href={item.link} className="work_button">
         Github <i className="bx bx-right-arrow-alt work_button-icon"></i>
       </a>
     </div>
